@@ -1,0 +1,149 @@
+.hero__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
+
+.hero__navbar-logo__links {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+    
+}
+
+.hero__navbar-logo__links-logo {
+
+}
+
+.hero__navbar-logo__links-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin-left: 3rem;
+}
+
+.hero__navbar-logo__links-links p, 
+.hero__navbar-signIn p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18181B;
+
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.hero__navbar-signIn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero__navbar-signIn button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: var(--color-black);
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    padding: .7rem  1rem;
+    cursor: pointer;
+}
+
+.hero__navbar-mobile__menu {
+    display: none;
+    margin: 1rem;
+
+    position: relative;
+}
+
+.hero__navbar-mobile__menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    text-align: end;
+
+    position: absolute;
+    top: 40px;
+    right: 0;
+    min-width: 210px;
+    background: #c4c3c1;
+    border-radius: 15px;
+}
+
+.hero__navbar-mobile__menu-links p,
+.hero__navbar-mobile__menu-signIn p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18181B;
+
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.hero__navbar-mobile__menu svg {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .hero__navbar-mobile__menu {
+        display: flex;
+    }
+
+    .hero__navbar-logo__links-links,
+    .hero__navbar-mobile__menu-signIn {
+        display: none;
+    }
+    .hero__navbar-mobile__menu-links p, 
+    .hero__navbar-mobile__menu-signIn p {
+        padding-right: 5px;
+      }
+
+}
+
+@media screen and (max-width: 550px) {
+    .hero__navbar-mobile__menu-signIn {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .hero__navbar-mobile__menu-signIn  button {
+        outline: none;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: #fff;
+        background: var(--color-black);
+    
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    
+        padding: .7rem  1rem;
+        cursor: pointer;
+    }
+    .hero__navbar-signIn {
+        display: none;
+    }
+}
